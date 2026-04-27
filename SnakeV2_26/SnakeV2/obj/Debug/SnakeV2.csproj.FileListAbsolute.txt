@@ -1,0 +1,20 @@
+E:\INFO\SOURCE 3^ C#\Snake\SnakeV2\SnakeV2\obj\Debug\SnakeV2.csproj.AssemblyReference.cache
+E:\INFO\SOURCE 3^ C#\Snake\SnakeV2\SnakeV2\obj\Debug\SnakeV2.Form1.resources
+E:\INFO\SOURCE 3^ C#\Snake\SnakeV2\SnakeV2\obj\Debug\SnakeV2.Properties.Resources.resources
+E:\INFO\SOURCE 3^ C#\Snake\SnakeV2\SnakeV2\obj\Debug\SnakeV2.csproj.GenerateResource.cache
+E:\INFO\SOURCE 3^ C#\Snake\SnakeV2\SnakeV2\obj\Debug\SnakeV2.csproj.CoreCompileInputs.cache
+E:\INFO\SOURCE 3^ C#\Snake\SnakeV2\SnakeV2\bin\Debug\SnakeV2.exe.config
+E:\INFO\SOURCE 3^ C#\Snake\SnakeV2\SnakeV2\bin\Debug\SnakeV2.exe
+E:\INFO\SOURCE 3^ C#\Snake\SnakeV2\SnakeV2\bin\Debug\SnakeV2.pdb
+E:\INFO\SOURCE 3^ C#\Snake\SnakeV2\SnakeV2\obj\Debug\SnakeV2.exe
+E:\INFO\SOURCE 3^ C#\Snake\SnakeV2\SnakeV2\obj\Debug\SnakeV2.pdb
+C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\bin\Debug\SnakeV2.exe.config
+C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\bin\Debug\SnakeV2.exe
+C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\bin\Debug\SnakeV2.pdb
+C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\obj\Debug\SnakeV2.csproj.AssemblyReference.cache
+C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\obj\Debug\SnakeV2.Form1.resources
+C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\obj\Debug\SnakeV2.Properties.Resources.resources
+C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\obj\Debug\SnakeV2.csproj.GenerateResource.cache
+C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\obj\Debug\SnakeV2.csproj.CoreCompileInputs.cache
+C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\obj\Debug\SnakeV2.exe
+C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\obj\Debug\SnakeV2.pdb
