@@ -1,10 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hagoss\\Documents\\c# Code\\Snake\\SnakeV2_26\\",
+  "WorkspaceRootPath": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|c:\\users\\hagoss\\documents\\c# code\\snake\\snakev2_26\\snakev2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|c:\\users\\hagoss\\documents\\snakev2_26\\snake\\snakev2_26_github\\snakev2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|solutionrelative:snakev2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|c:\\users\\hagoss\\documents\\snakev2_26\\snake\\snakev2_26_github\\snakev2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|solutionrelative:snakev2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|c:\\users\\hagoss\\documents\\snakev2_26\\snake\\snakev2_26_github\\snakev2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|solutionrelative:snakev2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|c:\\users\\hagoss\\documents\\snakev2_26\\snake\\snakev2_26_github\\snakev2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|solutionrelative:snakev2\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|c:\\users\\hagoss\\documents\\snakev2_26\\snake\\snakev2_26_github\\snakev2\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|solutionrelative:snakev2\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|c:\\users\\hagoss\\documents\\snakev2_26\\snake\\snakev2_26_github\\snakev2\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F503C68-668A-4EB7-85AD-F6E4BB233B65}|SnakeV2\\SnakeV2.csproj|solutionrelative:snakev2\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +34,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Form1.cs",
+              "RelativeDocumentMoniker": "SnakeV2\\Form1.cs",
+              "ToolTip": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Form1.cs",
+              "RelativeToolTip": "SnakeV2\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T14:52:58.528Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -30,15 +64,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\hagoss\\Documents\\c# Code\\Snake\\SnakeV2_26\\SnakeV2\\Form1.cs",
-              "RelativeDocumentMoniker": "SnakeV2\\Form1.cs",
-              "ToolTip": "C:\\Users\\hagoss\\Documents\\c# Code\\Snake\\SnakeV2_26\\SnakeV2\\Form1.cs",
-              "RelativeToolTip": "SnakeV2\\Form1.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAADwv4kAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Program.cs",
+              "RelativeDocumentMoniker": "SnakeV2\\Program.cs",
+              "ToolTip": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Program.cs",
+              "RelativeToolTip": "SnakeV2\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T14:52:58.528Z",
+              "WhenOpened": "2026-04-28T22:31:54.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Form2.cs",
+              "RelativeDocumentMoniker": "SnakeV2\\Form2.cs",
+              "ToolTip": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Form2.cs",
+              "RelativeToolTip": "SnakeV2\\Form2.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwBsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T22:30:01.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "SnakeV2\\Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Form2.Designer.cs",
+              "RelativeToolTip": "SnakeV2\\Form2.Designer.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAowFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T22:15:47.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [Progettazione]",
+              "DocumentMoniker": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Form2.cs",
+              "RelativeDocumentMoniker": "SnakeV2\\Form2.cs",
+              "ToolTip": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Form2.cs [Progettazione]",
+              "RelativeToolTip": "SnakeV2\\Form2.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T22:11:33.945Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Function.cs",
+              "DocumentMoniker": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Function.cs",
+              "RelativeDocumentMoniker": "SnakeV2\\Function.cs",
+              "ToolTip": "C:\\Users\\hagoss\\Documents\\SnakeV2_26\\snake\\SnakeV2_26_github\\SnakeV2\\Function.cs",
+              "RelativeToolTip": "SnakeV2\\Function.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwFQAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T21:56:30.3Z",
               "EditorCaption": ""
             }
           ]

@@ -22,6 +22,10 @@ namespace SnakeV2
             public bool GameOver;
         }
 
+
+        //--------------------------------------------------
+        //INIZIA PARTITA
+        //--------------------------------------------------
         public static void IniziaPartita(ref int num, position[]snake,int GridWidth,int GridHeight,
         ref int dirX,ref int dirY,ref int  nextDirX, ref int nextDirY)
         {
@@ -38,6 +42,12 @@ namespace SnakeV2
             
 
         }
+
+
+
+        //--------------------------------------------
+        //POSIZIONAMENTO DEL CIBO
+        //--------------------------------------------
 
         public static void PosizionaCibo(int GridWidth, int GridHeight, int num,
             position[] snake, ref position food)
@@ -72,8 +82,8 @@ namespace SnakeV2
 
 
         //---------------GAME OVER-------------
-        public static void GameOver(GameState stato,int punteggio,int record,Label labelStato,
-            Button btnInizia,Button btnPausa,Label labelRecord,Timer timer)
+        public static void GameOver(ref GameState stato,ref int punteggio,ref int record,Label labelStato,
+            Button btnInizia,Button btnPausa,Label labelRecord,Timer timer,Label labelPunteggio)
         {
             timer.Stop();
             stato.GameOver = true;
@@ -90,6 +100,8 @@ namespace SnakeV2
             labelStato.Visible = true;
             btnInizia.Enabled = true;
             btnPausa.Enabled = false;
+            punteggio = 0;
+            labelPunteggio.Text = "punteggio\n" + punteggio;
         }
     }
 }

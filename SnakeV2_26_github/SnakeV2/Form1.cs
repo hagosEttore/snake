@@ -9,7 +9,18 @@ namespace SnakeV2
         // ═════════════════════════════════════════════════════════════════
         public Form1()
         {
-            InitializeComponent();
+            
+        //----------CONTROLLO E APERTURA FORM2----------
+            //Form2 k = new Form2();
+            //if (k.ShowDialog() != DialogResult.OK)
+            //{
+            //    Application.Exit();
+            //    return;
+            //}
+
+
+        
+        InitializeComponent();
         }
 
         // ── Costanti di gioco ──────────────────────────────────────────────
@@ -83,28 +94,7 @@ namespace SnakeV2
             }
         }
 
-        // ══════════════════════════════════════════════════════════════════
-        // GAME OVER
-        // ══════════════════════════════════════════════════════════════════
-       
-        //                      )
-        //{
-        //    timer1.Stop();
-        //    stato.GameOver = true;
-        //    stato.Running = false;
-        //    stato.Paused = false;
-
-        //    if (punteggio > record)
-        //    {
-        //        record = punteggio;
-        //        labelRecord.Text = "Record\n" + record;
-        //    }
-
-        //    labelStato.Text = "GAME OVER\nPunteggio: " + punteggio + "\n\nPremi Inizia";
-        //    labelStato.Visible = true;
-        //    btnInizia.Enabled = true;
-        //    btnPausa.Enabled = false;
-        //}
+        
 
         // ══════════════════════════════════════════════════════════════════
         // TICK DEL TIMER
@@ -124,8 +114,8 @@ namespace SnakeV2
             if (nuovaTesta.x < 0 || nuovaTesta.x >= GridWidth ||
                 nuovaTesta.y < 0 || nuovaTesta.y >= GridHeight)
             {
-                function.GameOver(stato,punteggio,record,labelStato,btnInizia,
-                    btnPausa,labelRecord,timer1); return;
+                function.GameOver(ref stato,ref punteggio,ref record,labelStato,btnInizia,
+                    btnPausa,labelRecord,timer1,labelPunteggio); return;
             }
 
             // Collisione con se stesso (escludi l'ultima cella: verrà rimossa)
@@ -133,8 +123,8 @@ namespace SnakeV2
             {
                 if (snake[i].x == nuovaTesta.x && snake[i].y == nuovaTesta.y)
                 { 
-                    function.GameOver(stato,punteggio,record,labelStato,
-                    btnInizia,btnPausa,labelRecord,timer1); return; 
+                    function.GameOver(ref stato,ref punteggio,ref record,labelStato,
+                    btnInizia,btnPausa,labelRecord,timer1,labelPunteggio); return; 
                 }
             }
 
@@ -212,11 +202,6 @@ namespace SnakeV2
                 }
             }
             return base.ProcessCmdKey(ref msg, keyData);
-        }
-
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
-            // ProcessCmdKey gestisce già le frecce; questo metodo rimane per compatibilità
         }
 
         

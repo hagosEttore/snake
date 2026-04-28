@@ -16,6 +16,9 @@ namespace SnakeV2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Form2 k = new Form2();
+            if (k.ShowDialog() != DialogResult.OK)
+                return;
             Application.Run(new Form1());
         }
     }

@@ -18,3 +18,14 @@ C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\obj\Debug\SnakeV2.csp
 C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\obj\Debug\SnakeV2.csproj.CoreCompileInputs.cache
 C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\obj\Debug\SnakeV2.exe
 C:\Users\hagoss\Documents\c# Code\Snake\SnakeV2_26\SnakeV2\obj\Debug\SnakeV2.pdb
+C:\Users\hagoss\Documents\SnakeV2_26\snake\SnakeV2_26_github\SnakeV2\bin\Debug\SnakeV2.exe.config
+C:\Users\hagoss\Documents\SnakeV2_26\snake\SnakeV2_26_github\SnakeV2\bin\Debug\SnakeV2.exe
+C:\Users\hagoss\Documents\SnakeV2_26\snake\SnakeV2_26_github\SnakeV2\bin\Debug\SnakeV2.pdb
+C:\Users\hagoss\Documents\SnakeV2_26\snake\SnakeV2_26_github\SnakeV2\obj\Debug\SnakeV2.csproj.AssemblyReference.cache
+C:\Users\hagoss\Documents\SnakeV2_26\snake\SnakeV2_26_github\SnakeV2\obj\Debug\SnakeV2.Form1.resources
+C:\Users\hagoss\Documents\SnakeV2_26\snake\SnakeV2_26_github\SnakeV2\obj\Debug\SnakeV2.Properties.Resources.resources
+C:\Users\hagoss\Documents\SnakeV2_26\snake\SnakeV2_26_github\SnakeV2\obj\Debug\SnakeV2.csproj.GenerateResource.cache
+C:\Users\hagoss\Documents\SnakeV2_26\snake\SnakeV2_26_github\SnakeV2\obj\Debug\SnakeV2.csproj.CoreCompileInputs.cache
+C:\Users\hagoss\Documents\SnakeV2_26\snake\SnakeV2_26_github\SnakeV2\obj\Debug\SnakeV2.exe
+C:\Users\hagoss\Documents\SnakeV2_26\snake\SnakeV2_26_github\SnakeV2\obj\Debug\SnakeV2.pdb
+C:\Users\hagoss\Documents\SnakeV2_26\snake\SnakeV2_26_github\SnakeV2\obj\Debug\SnakeV2.Form2.resources
