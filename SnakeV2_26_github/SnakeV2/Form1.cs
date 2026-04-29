@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace SnakeV2
@@ -9,18 +10,17 @@ namespace SnakeV2
         // ═════════════════════════════════════════════════════════════════
         public Form1()
         {
-            
-        //----------CONTROLLO E APERTURA FORM2----------
-            //Form2 k = new Form2();
-            //if (k.ShowDialog() != DialogResult.OK)
-            //{
-            //    Application.Exit();
-            //    return;
-            //}
-
-
-        
-        InitializeComponent();
+            InitializeComponent();
+            StreamReader p = new StreamReader("dati.txt");
+            while(!p.EndOfStream)
+            {
+                giocatore[utenti].nome = p.ReadLine();
+                giocatore[utenti].password = p.ReadLine();
+                giocatore[utenti].punti = int.Parse(p.ReadLine());
+                utenti++;
+            }
+            p.Close();
+            tabControl.SelectedIndexChanged += tabControl_SelectedIndexChanged;
         }
 
         // ── Costanti di gioco ──────────────────────────────────────────────
@@ -40,6 +40,10 @@ namespace SnakeV2
         private int punteggio;
         private int record;
 
+        //-----GIOCATORI----------------
+        function_accessi.dati_utente[] giocatore = new function_accessi.dati_utente[100];
+        int utenti = default;
+
         // ── Stato macchina ─────────────────────────────────────────────────
         //al'inizio erano cosi ma le ho modificate
         //public enum GameState { Idle, Running, Paused, GameOver }
@@ -54,8 +58,17 @@ namespace SnakeV2
         // ══════════════════════════════════════════════════════════════════
         private void btnInizia_Click(object sender, EventArgs e)
         {
+            
             function.IniziaPartita(ref num, snake, GridWidth, GridHeight, ref dirX,
             ref dirY,ref nextDirX,ref nextDirY);
+            int x = function.Cerca_utente(giocatore, utenti);
+            if(x <0)
+            {
+                MessageBox.Show("errore");
+                return;
+            }
+            labelRecord.Text = "record\n" + giocatore[x].punti.ToString();
+            record = giocatore[x].punti;
             stato.Running = true;
             stato.Paused = false;
             labelStato.Visible = false;
@@ -115,7 +128,7 @@ namespace SnakeV2
                 nuovaTesta.y < 0 || nuovaTesta.y >= GridHeight)
             {
                 function.GameOver(ref stato,ref punteggio,ref record,labelStato,btnInizia,
-                    btnPausa,labelRecord,timer1,labelPunteggio); return;
+                    btnPausa, labelRecord, timer1, labelPunteggio, giocatore,utenti); return;
             }
 
             // Collisione con se stesso (escludi l'ultima cella: verrà rimossa)
@@ -124,7 +137,7 @@ namespace SnakeV2
                 if (snake[i].x == nuovaTesta.x && snake[i].y == nuovaTesta.y)
                 { 
                     function.GameOver(ref stato,ref punteggio,ref record,labelStato,
-                    btnInizia,btnPausa,labelRecord,timer1,labelPunteggio); return; 
+                    btnInizia,btnPausa,labelRecord,timer1,labelPunteggio,giocatore,utenti); return; 
                 }
             }
 
@@ -148,6 +161,79 @@ namespace SnakeV2
             }
 
             pictureBoxGioco.Invalidate();
+        }
+
+        private void btnCancellaRecord_Click(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count == 0)
+                return;
+
+            int y = function.Cerca_utente(giocatore, utenti);
+            string nomeSelezionato = listView1.SelectedItems[0].SubItems[1].Text;
+            int x = 0;
+
+            while (x < utenti)
+            {
+                // cerca il prossimo con quel nome
+                while (x < utenti)
+                {
+                    if (nomeSelezionato == giocatore[x].nome)
+                        break;
+                    x++;
+                }
+
+                if (x >= utenti) return;
+
+                if (giocatore[x].nome == giocatore[y].nome &&
+                    giocatore[x].password == giocatore[y].password)
+                {
+                    function.elimina(giocatore, x, ref utenti); 
+                    function.aggiorna_classifica(giocatore, utenti, listView1); 
+                    return;
+                }
+
+                x++; // password non corrispondeva, continua a cercare
+            }
+        }
+
+        private void btnSalvaProfilo_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtCNome.Text)
+                || string.IsNullOrEmpty(txtCPassword.Text)
+                || string.IsNullOrEmpty(txtCNuovaPassword.Text))
+            {
+                return;
+            }
+            int x = 0;
+            while(x<utenti)
+            {
+                if(txtCPassword.Text == giocatore[x].password && txtCNome.Text == giocatore[x].nome)
+                {
+                    
+
+                    break;
+                }
+                x++;
+            }
+            if(x == utenti)
+            {
+                MessageBox.Show("utente non corrisponde al tuo");
+                return;
+            }
+            function_accessi.nome = txtCNome.Text;
+            function_accessi.password = txtCNuovaPassword.Text;
+            giocatore[x].password = txtCNuovaPassword.Text;
+            x = 0;
+            StreamWriter p = new StreamWriter("dati.txt");
+            while(x<utenti)
+            {
+                p.WriteLine(giocatore[x].nome);
+                p.WriteLine(giocatore[x].password);
+                p.WriteLine(giocatore[x].punti);
+                x++;
+            }
+            p.Close();
+            MessageBox.Show("password modificata!");
         }
 
         // ══════════════════════════════════════════════════════════════════
@@ -204,6 +290,15 @@ namespace SnakeV2
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        
+        //-------------------se cambia qualcosa nel tabcontrol----------------------
+        private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControl.SelectedIndex == 1)
+            {
+                function.aggiorna_classifica(giocatore, utenti, listView1);
+            }
+        }
+
+
     }
 }

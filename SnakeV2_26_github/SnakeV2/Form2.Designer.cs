@@ -17,6 +17,8 @@
         {
             this.lblNome = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnConferma = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -44,6 +46,31 @@
             this.txtNome.Size = new System.Drawing.Size(365, 33);
             this.txtNome.TabIndex = 1;
             // 
+            // lblPassword
+            // 
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Bold);
+            this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(80)))));
+            this.lblPassword.Location = new System.Drawing.Point(34, 118);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(366, 28);
+            this.lblPassword.TabIndex = 2;
+            this.lblPassword.Text = "Inserisci la password:";
+            this.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPassword.Font = new System.Drawing.Font("Consolas", 13F, System.Drawing.FontStyle.Bold);
+            this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(80)))));
+            this.txtPassword.Location = new System.Drawing.Point(34, 156);
+            this.txtPassword.MaxLength = 32;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(365, 33);
+            this.txtPassword.TabIndex = 3;
+            // 
             // btnConferma
             // 
             this.btnConferma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(60)))));
@@ -54,10 +81,10 @@
             this.btnConferma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConferma.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Bold);
             this.btnConferma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(8)))), ((int)(((byte)(8)))));
-            this.btnConferma.Location = new System.Drawing.Point(34, 124);
+            this.btnConferma.Location = new System.Drawing.Point(34, 210);
             this.btnConferma.Name = "btnConferma";
             this.btnConferma.Size = new System.Drawing.Size(366, 41);
-            this.btnConferma.TabIndex = 2;
+            this.btnConferma.TabIndex = 4;
             this.btnConferma.Text = "Conferma";
             this.btnConferma.UseVisualStyleBackColor = false;
             this.btnConferma.Click += new System.EventHandler(this.btnConferma_Click);
@@ -67,9 +94,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(8)))), ((int)(((byte)(8)))));
-            this.ClientSize = new System.Drawing.Size(434, 203);
+            this.ClientSize = new System.Drawing.Size(434, 290);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnConferma);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -79,13 +108,14 @@
             this.Text = "Inserisci Nome";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
 
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnConferma;
     }
 }
